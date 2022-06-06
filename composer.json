@@ -1,0 +1,38 @@
+{
+    "name": "muath-ye/laravel-girlfriend",
+    "description": "A wonderful command line tool for managing your love with helpers.",
+    "keywords": [
+        "girlfriend",
+        "laravel",
+        "helper",
+        "laravel helpers",
+        "muath-ye"
+    ],
+    "license": "MIT",
+    "type": "library",
+    "authors": [{
+        "name": "Muath Alsowadi",
+        "email": "muath.ye@gmail.com"
+    }],
+    "require": {
+        "laravel/framework": "^5.7|^5.8|^6.0|^7.0|^8.0|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Muathye\\GirlFriend\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Muathye\\GirlFriend\\ServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "version": "1.0.0"
+}
