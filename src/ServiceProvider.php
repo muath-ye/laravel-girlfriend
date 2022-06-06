@@ -16,8 +16,8 @@ class ServiceProvider extends BaseServiceProvider
     	}
 
         // TODO: Use the path in created config.
-        if (File::exists(app_path('helpers.php'))) {
-        	require_once app_path('helpers.php');
+        if (File::exists(resource_path('helpers.php'))) {
+        	require_once resource_path('helpers.php');
         }
     }
 }

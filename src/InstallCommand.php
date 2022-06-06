@@ -8,12 +8,12 @@ use Illuminate\Support\Facades\File;
 class InstallCommand extends Command
 {
     protected $signature = 'girlfriend:kissme';
-    protected $description = 'Add a app/helpers.php file to your project';
+    protected $description = 'Add a resource/helpers.php file to your project';
 
     public function handle()
     {
         // TODO: make config file for helpers.php path
-        $helpersFilePath = app_path('helpers.php');
+        $helpersFilePath = resource_path('helpers.php');
 
         if (File::exists($helpersFilePath)) {
             $this->info('Looks like we are in love, a helpers file exists.');
@@ -21,7 +21,7 @@ class InstallCommand extends Command
         }
 
         File::put($helpersFilePath, $this->helpersFileContents());
-        $this->info('Hooray! Your girl file awaits you at app/helpers.php');
+        $this->info('Hooray! Your girl file awaits you at resource/helpers.php');
     }
 
     protected function helpersFileContents()
