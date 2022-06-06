@@ -15,7 +15,7 @@ class ServiceProvider extends BaseServiceProvider
 	        ]);
     	}
 
-        // TODO: Use the path in created config.
+        // TODO: Use the path in created config. see InstallCommand.php
         if (File::exists(resource_path('helpers.php'))) {
         	require_once resource_path('helpers.php');
         }

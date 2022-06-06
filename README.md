@@ -4,7 +4,7 @@ This is a package to managing your love with laravel helpers.
 
 ## Installation
 
-Require this package with composer.
+Require this package with composer package manager.
 
 ```shell
 composer require muath-ye/laravel-girlfriend
