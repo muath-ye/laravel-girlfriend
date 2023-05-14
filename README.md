@@ -29,3 +29,5 @@ php artisan girlfriend:kissme
 ```
 
 You will find resources/helpers.php file, your are free to update the file by your own needs.
+
+That is it.
